@@ -1,6 +1,18 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: 'AWS::Serverless-2016-10-31'
 Description: A starter AWS Lambda function.
+Metadata:
+  AWS::ServerlessRepo::Application:
+    Name: python-app
+    Description: hello world
+    Author: Tejas Gupta
+    SpdxLicenseId: Apache-2.0
+    LicenseUrl: LICENSE.txt
+    ReadmeUrl: README.md
+    Labels: ['app']
+    HomePageUrl: https://github.com/tejas0207/sample-serverless-app
+    SemanticVersion: 0.0.1
+    SourceCodeUrl: https://github.com/tejas0207/sample-serverless-app
 Parameters: 
     IdentityNameParameter: 
       Type: String
